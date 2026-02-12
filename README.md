@@ -10,6 +10,10 @@
 
 **"Throughout Heaven and Earth, I alone am the financially responsible one." - Gojo Satoru**
 
+### 🌐 **[LIVE DEMO](https://adarsh6-coder.github.io/cursed-finance-tracker/index.html)** 🌐
+
+**Try it now without installing anything!**
+
 [🌟 Features](#-features) • [🚀 Quick Start](#-quick-start) • [🎵 Audio System](#-audio-system) • [🛠️ Tech Stack](#️-tech-stack)
 
 </div>
@@ -19,6 +23,25 @@
 ## 📖 About
 
 **Cursed Finance Tracker** is an epic, anime-themed personal finance management application inspired by **Jujutsu Kaisen**. Track your income, expenses, and budgets while experiencing a fully immersive JJK universe with dark anime UI, high-quality audio, and cartoonish animations.
+
+## 🌐 Live Demo
+
+### **👉 [Click Here to Try the Live Demo!](https://adarsh6-coder.github.io/cursed-finance-tracker/index.html) 👈**
+
+**No installation required!** Experience the full JJK theme with:
+- 🎨 Dark anime UI
+- 🎵 10+ interactive sound effects
+- ✨ Smooth cartoonish animations
+- 🌀 Domain expansion loading screens
+- 💫 Cursed energy particle effects
+
+**Quick Links:**
+- 🏠 [Hero Page](https://adarsh6-coder.github.io/cursed-finance-tracker/index.html)
+- 🔐 [Login](https://adarsh6-coder.github.io/cursed-finance-tracker/login.html)
+- 📝 [Register](https://adarsh6-coder.github.io/cursed-finance-tracker/register.html)
+- 📊 [Dashboard](https://adarsh6-coder.github.io/cursed-finance-tracker/dashboard.html)
+
+> **Note:** The live demo uses frontend-only features. For full backend functionality, run locally following the [Quick Start](#-quick-start) guide.
 
 ---
 
