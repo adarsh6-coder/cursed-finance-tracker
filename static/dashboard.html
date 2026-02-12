@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Dashboard - Cursed Finance</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <h1><span style="color: var(--jjk-purple);">呪</span> CURSED FINANCE</h1>
+        <nav>
+            <a href="dashboard.html" class="active">📊 Dashboard</a>
+            <a href="expenses.html">💸 Expenses</a>
+            <a href="income.html">💰 Income</a>
+            <a href="budget.html">🎯 Budget</a>
+            <a href="history.html">📜 History</a>
+        </nav>
+        <button class="logout-btn" id="logoutBtn">⚡ Logout</button>
+    </nav>
+
+    <div class="container">
+        <h1 style="font-size: 2.5rem; background: linear-gradient(135deg, var(--jjk-purple), var(--jjk-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            🌀 FINANCIAL DOMAIN
+        </h1>
+        <div class="dashboard-grid">
+            <div class="stat-card income">
+                <h3>💰 Total Income</h3>
+                <div class="amount" id="totalIncome">$0.00</div>
+            </div>
+            <div class="stat-card expense">
+                <h3>💸 Total Expenses</h3>
+                <div class="amount" id="totalExpenses">$0.00</div>
+            </div>
+            <div class="stat-card balance">
+                <h3>⚖️ Balance</h3>
+                <div class="amount" id="balance">$0.00</div>
+            </div>
+            <div class="stat-card">
+                <h3>🎯 Budget Status</h3>
+                <div class="budget-summary" id="budgetSummary" style="font-size: 1.2rem; color: var(--jjk-text-primary);">No budgets set</div>
+            </div>
+        </div>
+
+        <div class="transactions-list">
+            <h2>⚡ Recent Cursed Transactions</h2>
+            <div id="recentTransactions">
+                <p class="no-data" style="text-align: center; color: var(--jjk-text-secondary); padding: 2rem;">No transactions yet. Start tracking your financial energy!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/jjk-effects.js"></script>
+    <script src="/static/dashboard.js"></script>
+</body>
+</html>

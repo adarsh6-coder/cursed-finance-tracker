@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursed Income - Finance Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <h1><span style="color: var(--jjk-purple);">呪</span> CURSED FINANCE</h1>
+        <nav>
+            <a href="dashboard.html">📊 Dashboard</a>
+            <a href="expenses.html">💸 Expenses</a>
+            <a href="income.html" class="active">💰 Income</a>
+            <a href="budget.html">🎯 Budget</a>
+            <a href="history.html">📜 History</a>
+        </nav>
+        <button class="logout-btn" id="logoutBtn">⚡ Logout</button>
+    </nav>
+
+    <div class="container">
+        <h1 style="font-size: 2.5rem; background: linear-gradient(135deg, var(--jjk-green), var(--jjk-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            💰 SUMMON INCOME ENERGY
+        </h1>
+        <div class="form-section">
+            <h2>✨ Add New Income Source</h2>
+            <form id="incomeForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="amount">Amount ($)</label>
+                        <input type="number" id="amount" name="amount" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="source">Source</label>
+                        <input type="text" id="source" name="source" placeholder="e.g., Salary, Freelance" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Frequency</label>
+                        <select id="frequency" name="frequency" required>
+                            <option value="">Select Frequency</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Bi-weekly">Bi-weekly</option>
+                            <option value="One-time">One-time</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                </div>
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="isRecurring" name="isRecurring">
+                        Recurring Income
+                    </label>
+                </div>
+                <button type="submit" class="btn-primary">Add Income</button>
+                <div id="message" class="message"></div>
+            </form>
+        </div>
+
+        <div class="transactions-list">
+            <h2>💎 Your Blessed Income Sources</h2>
+            <div id="incomeList">
+                <p class="no-data" style="text-align: center; color: var(--jjk-text-secondary); padding: 2rem;">No income recorded yet. Channel your earning potential!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/jjk-effects.js"></script>
+    <script src="/static/income.js"></script>
+</body>
+</html>

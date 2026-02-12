@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursed Energy History - Finance Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <h1><span style="color: var(--jjk-purple);">呪</span> CURSED FINANCE</h1>
+        <nav>
+            <a href="dashboard.html">📊 Dashboard</a>
+            <a href="expenses.html">💸 Expenses</a>
+            <a href="income.html">💰 Income</a>
+            <a href="budget.html">🎯 Budget</a>
+            <a href="history.html" class="active">📜 History</a>
+        </nav>
+        <button class="logout-btn" id="logoutBtn">⚡ Logout</button>
+    </nav>
+
+    <div class="container">
+        <h1 style="font-size: 2.5rem; background: linear-gradient(135deg, var(--jjk-cyan), var(--jjk-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            📜 CURSED ENERGY CHRONICLES
+        </h1>
+        
+        <div class="filter-section">
+            <h2>🔍 Search the Archives</h2>
+            <div class="filter-group">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="filterType">Type</label>
+                        <select id="filterType">
+                            <option value="all">All Transactions</option>
+                            <option value="expense">Expenses Only</option>
+                            <option value="income">Income Only</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="filterCategory">Category</label>
+                        <select id="filterCategory">
+                            <option value="all">All Categories</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="searchTerm">Search</label>
+                        <input type="text" id="searchTerm" placeholder="Search by description or source">
+                    </div>
+                    <div class="form-group">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" id="startDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="endDate">End Date</label>
+                        <input type="date" id="endDate">
+                    </div>
+                </div>
+                <button id="applyFilters" class="btn-primary">Apply Filters</button>
+            </div>
+        </div>
+
+        <div class="transactions-list">
+            <h2>⚔️ All Cursed Transactions</h2>
+            <div id="transactionList">
+                <p class="no-data" style="text-align: center; color: var(--jjk-text-secondary); padding: 2rem;">No transactions found. Your financial journey awaits!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/jjk-effects.js"></script>
+    <script src="/static/history.js"></script>
+</body>
+</html>
